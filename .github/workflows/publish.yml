@@ -27,8 +27,11 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release --no-restore
 
+    - name: Test
+      run: dotnet test --configuration Release --no-build
+
     - name: Pack
-      run: dotnet pack --configuration Release --no-build --output ./artifacts
+      run: dotnet pack --configuration Release --no-build --output nupkgs
 
     - name: Push Package to NuGet.org
-      run: dotnet nuget push *.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json
+      run: dotnet nuget push nupkgs/*.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json
