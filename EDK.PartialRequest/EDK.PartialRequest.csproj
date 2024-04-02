@@ -10,6 +10,7 @@
 	<Authors>Eyuel Gizaw Molla</Authors>
 	<PackageTags>aspnetcore, utility, json, undefined, partial, request</PackageTags>
 	<IsPackable>true</IsPackable>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
