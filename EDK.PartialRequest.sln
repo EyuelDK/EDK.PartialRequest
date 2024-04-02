@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EDK.PartialRequest", "EDK.PartialRequest\EDK.PartialRequest.csproj", "{758A0C55-38BE-4F36-A504-0E4D51D3ACD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EDK.PartialRequest.Tests", "EDK.PartialRequest.Tests\EDK.PartialRequest.Tests.csproj", "{5ED79C4F-A885-49CC-8807-7F982BC8F53B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{758A0C55-38BE-4F36-A504-0E4D51D3ACD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{758A0C55-38BE-4F36-A504-0E4D51D3ACD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{758A0C55-38BE-4F36-A504-0E4D51D3ACD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{758A0C55-38BE-4F36-A504-0E4D51D3ACD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ED79C4F-A885-49CC-8807-7F982BC8F53B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ED79C4F-A885-49CC-8807-7F982BC8F53B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ED79C4F-A885-49CC-8807-7F982BC8F53B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ED79C4F-A885-49CC-8807-7F982BC8F53B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A5055AA5-01AB-4AE8-B4A6-CDCF4E844B6A}
+	EndGlobalSection
+EndGlobal
