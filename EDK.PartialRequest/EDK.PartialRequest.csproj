@@ -14,7 +14,9 @@
 		<Authors>Eyuel Gizaw Molla</Authors>
 		<PackageTags>aspnetcore, utility, json, undefined, partial, request</PackageTags>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<RepositoryUrl>https://github.com/EyuelDK/EDK.PartialRequest</RepositoryUrl>
+		<RepositoryUrl>https://github.com/EyuelDK/EDK.PartialRequest.git</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
 	</PropertyGroup>
 
 	<ItemGroup>
