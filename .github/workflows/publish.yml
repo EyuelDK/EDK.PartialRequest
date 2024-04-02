@@ -32,9 +32,5 @@ jobs:
     - name: Pack
       run: dotnet pack --configuration Release --no-build --output ./artifacts
 
-    - name: Publish NuGet Package
-      uses: nuget/push@v2
-      with:
-        nuget-api-key: ${{ secrets.NUGET_API_KEY }}
-        nuget-version: 4.x
-        package: './artifacts/*.nupkg'
+    - name: Push Package to NuGet.org
+      run: dotnet nuget push *.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json
