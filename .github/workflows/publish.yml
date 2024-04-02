@@ -5,9 +5,9 @@ name: Publish NUGET package
 
 on:
   push:
-    branches: [ "development" ]
+    branches: [ "production" ]
   pull_request:
-    branches: [ "development" ]
+    branches: [ "production" ]
 
 jobs:
 
