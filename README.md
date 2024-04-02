@@ -5,23 +5,9 @@
 
 EDK.PartialRequest is a .NET library designed to simplify patch requests in ASP.NET Core.
 
-## Installation
-
-You can install this library via NuGet. Use the following command in the Package Manager Console:
-
-```bash
-Install-Package EDK.PartialRequest
-```
-
-Or use the dotnet CLI:
-
-```bash
-dotnet add package EDK.PartialRequest
-```
-
 ## Usage
 
-First, define a request model that inherits from `PartialRequest<T>` where `T` is the type of the request model itself. This allows you to utilize the helper methods provided by `PartialRequest`.
+Define a request model that inherits from `PartialRequest<T>` where `T` is the type of the request model itself.
 
 ```csharp
 using EDK.PartialRequest;
@@ -35,7 +21,14 @@ public class ExampleRequest : PartialRequest<ExampleRequest>
 }
 ```
 
-Then, in your controller, you can use this request model to check if properties were defined in the deserialized request model:
+Make sure to include Newtonsoft as your json serializer in your `Program.cs` or `Startup.cs`
+```csharp
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddControllers();
+builder.Services.AddControllers().AddNewtonsoftJson();
+```
+
+In your controller, you can use this request model to check if properties are defined or not:
 
 ```csharp
 using Microsoft.AspNetCore.Mvc;
