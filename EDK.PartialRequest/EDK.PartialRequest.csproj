@@ -13,7 +13,7 @@
 		<Version>1.0.1</Version>
 		<Authors>Eyuel Gizaw Molla</Authors>
 		<PackageTags>aspnetcore, utility, json, undefined, partial, request</PackageTags>
-		<PackageReadmeFile>../README.md</PackageReadmeFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -21,7 +21,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<None Update="..\README.md" Pack="true" PackagePath="\" />
+		<None Include="..\README.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 
 </Project>
