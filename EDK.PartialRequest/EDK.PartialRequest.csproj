@@ -1,19 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-	<TargetFramework>netstandard2.0</TargetFramework>
-	<LangVersion>9.0</LangVersion>
-	<Nullable>enable</Nullable>
-	<Description>a .NET library designed to simplify patch requests in ASP.NET Core</Description>
-	<PackageId>EDK.PartialRequest</PackageId>
-	<Version>1.0.1</Version>
-	<Authors>Eyuel Gizaw Molla</Authors>
-	<PackageTags>aspnetcore, utility, json, undefined, partial, request</PackageTags>
-	<IsPackable>true</IsPackable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<LangVersion>9.0</LangVersion>
+		<Nullable>enable</Nullable>
+		<IsPackable>true</IsPackable>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-  </ItemGroup>
+	<PropertyGroup>
+		<Description>a .NET library designed to simplify patch requests in ASP.NET Core</Description>
+		<PackageId>EDK.PartialRequest</PackageId>
+		<Version>1.0.2</Version>
+		<Authors>Eyuel Gizaw Molla</Authors>
+		<PackageTags>aspnetcore, utility, json, undefined, partial, request</PackageTags>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	</ItemGroup>
 
 </Project>
