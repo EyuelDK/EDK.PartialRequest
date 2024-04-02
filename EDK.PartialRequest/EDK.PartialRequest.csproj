@@ -9,6 +9,7 @@
 	<Version>1.0.0</Version>
 	<Authors>Eyuel Gizaw Molla</Authors>
 	<PackageTags>aspnetcore, utility, json, undefined, partial, request</PackageTags>
+	<IsPackable>true</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>
