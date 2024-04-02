@@ -3,7 +3,7 @@
 [![NuGet Version](https://img.shields.io/nuget/v/EDK.PartialRequest.svg)](https://www.nuget.org/packages/EDK.PartialRequest/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-EDK.PartialRequest is a .NET library designed to simplify partial/patch requests handling in ASP.NET Core.
+EDK.PartialRequest is a .NET library designed to simplify patch requests in ASP.NET Core.
 
 ## Installation
 
