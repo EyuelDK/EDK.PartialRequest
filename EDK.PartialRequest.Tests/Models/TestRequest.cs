@@ -1,6 +1,6 @@
 ﻿namespace EDK.PartialRequest.Tests
 {
-    public class PartialObject : PartialRequest<PartialObject>
+    public class TestRequest : PartialRequest<TestRequest>
     {
         public string? Field1 { get; set; }
         public string? Field2 { get; set; }

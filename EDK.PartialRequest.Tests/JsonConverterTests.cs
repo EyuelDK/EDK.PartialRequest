@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 
 namespace EDK.PartialRequest.Tests
 {
-    public partial class PartialRequestJsonConverterTests
+    public partial class JsonConverterTests
     {
         [Test]
         public void DeserializeJson_HasSomeUndefinedFields_IdentifiesUndefinedFields()
@@ -14,12 +14,12 @@ namespace EDK.PartialRequest.Tests
                     "field5": "value5"
                 }
             """;
-            var partialObject = JsonConvert.DeserializeObject<PartialObject>(json);
+            var partialObject = JsonConvert.DeserializeObject<TestRequest>(json);
             Assert.That(partialObject, Is.Not.Null);
             var definedProperties = new string[] { 
-                nameof(PartialObject.Field1), 
-                nameof(PartialObject.Field2), 
-                nameof(PartialObject.Field5),
+                nameof(TestRequest.Field1), 
+                nameof(TestRequest.Field2), 
+                nameof(TestRequest.Field5),
             };
             Assert.That(partialObject.GetDefinedProperties(), Is.EqualTo(definedProperties));
         }
@@ -36,14 +36,14 @@ namespace EDK.PartialRequest.Tests
                     "field5": "value5"
                 }
             """;
-            var partialObject = JsonConvert.DeserializeObject<PartialObject>(json);
+            var partialObject = JsonConvert.DeserializeObject<TestRequest>(json);
             Assert.That(partialObject, Is.Not.Null);
             var definedProperties = new string[] {
-                nameof(PartialObject.Field1),
-                nameof(PartialObject.Field2),
-                nameof(PartialObject.Field3),
-                nameof(PartialObject.Field4),
-                nameof(PartialObject.Field5),
+                nameof(TestRequest.Field1),
+                nameof(TestRequest.Field2),
+                nameof(TestRequest.Field3),
+                nameof(TestRequest.Field4),
+                nameof(TestRequest.Field5),
             };
             Assert.That(partialObject.GetDefinedProperties(), Is.EqualTo(definedProperties));
         }
@@ -55,7 +55,7 @@ namespace EDK.PartialRequest.Tests
                 {
                 }
             """;
-            var partialObject = JsonConvert.DeserializeObject<PartialObject>(json);
+            var partialObject = JsonConvert.DeserializeObject<TestRequest>(json);
             Assert.That(partialObject, Is.Not.Null);
             Assert.That(partialObject.GetDefinedProperties(), Is.Empty);
         }
