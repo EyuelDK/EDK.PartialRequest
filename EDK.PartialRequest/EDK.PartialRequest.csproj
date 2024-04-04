@@ -10,8 +10,8 @@
 	<PropertyGroup>
 		<Description>a .NET library designed to simplify patch requests in ASP.NET Core</Description>
 		<PackageId>EDK.PartialRequest</PackageId>
-		<Version>1.0.4</Version>
-		<Authors>Eyuel Gizaw Molla</Authors>
+		<Version>1.0.5</Version>
+		<Authors>eyueldk</Authors>
 		<PackageTags>aspnetcore, utility, json, undefined, partial, request</PackageTags>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<RepositoryUrl>https://github.com/EyuelDK/EDK.PartialRequest.git</RepositoryUrl>
